@@ -17,7 +17,7 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-# cordova-plugin-kunder-accountmanager
+# cordova-plugin-kunder-keychain
 
 This cordova plugin enables you to use iOS Keychain to manage accounts of one user and share with other applications of the same company (e.g google apps like gmail, youtube, etc).
 
