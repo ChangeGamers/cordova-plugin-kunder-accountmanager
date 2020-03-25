@@ -39,7 +39,7 @@ The following variables need to be set in config.xml:
 ## Methods
 
 - initWithKey: register the encryptionKey for AES encryption. It must be called before other Account Manager methods
-* function(encryptionKey, successCallback, errorCallback) 
+    - function(encryptionKey, successCallback, errorCallback) 
 - registerAccount: register an user in Account Manager
 * function(userName, password, accountType, group, userData, successCallback, errorCallback) 
 - removeAccount: remove all data from keychain (iOS)
