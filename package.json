@@ -15,12 +15,10 @@
   },
   "keywords": [
     "cordova",
-    "accountmanager",
-    "android",
+    "keychain",
     "ios",
     "plugin",
     "ecosystem:cordova",
-    "cordova-android"
   ],
   "author": "Kunder",
   "license": "MIT",

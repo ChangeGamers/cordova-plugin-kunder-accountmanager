@@ -17,14 +17,6 @@
         <engine name="cordova" version=">=8.1.1" />
     </engines>
 
-    <edit-config mode="merge" file="src/android/res/xml/authenticator.xml" target="/account-authenticator">
-        <account-authenticator 
-            android:accountType="$ACCOUNT_MANAGER_TYPE"
-            android:icon="@drawable/acm_icon"
-            android:smallIcon="@drawable/acm_icon"
-            android:label="@string/authLabel"/>
-    </edit-config>
-
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="AccountManagerPlugin">
