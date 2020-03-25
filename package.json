@@ -1,11 +1,10 @@
 {
-  "name": "cordova-plugin-kunder-accountmanager",
-  "version": "1.0.2",
-  "description": "Use Android Account Manager and iOS Keychain to manage accounts of one user and share with other applications of the same vendor",
+  "name": "cordova-plugin-mg-kunder-keychain",
+  "version": "1.0.0",
+  "description": "Use iOS Keychain to manage accounts of one user and share with other applications of the same vendor",
   "cordova": {
-    "id": "cordova-plugin-kunder-accountmanager",
+    "id": "cordova-plugin-mg-kunder-keychain",
     "platforms": [
-      "android",
       "ios"
     ]
   },

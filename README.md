@@ -17,7 +17,7 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-# cordova-plugin-kunder-keychain
+# cordova-plugin-mg-kunder-keychain
 
 This cordova plugin enables you to use iOS Keychain to manage accounts of one user and share with other applications of the same company (e.g google apps like gmail, youtube, etc).
 
@@ -25,21 +25,12 @@ It's possible to moddify this plugins to allow multiple accounts.
 
 By default, this plugin cypher the key and message before setting data into Account Manager with AES 256 bits (Android only).
 
-## Installation
-
-```
-cordova plugin add https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager.git#1.0.1 (the lastest stable version)
-```
 
 ## Account Manager settings
 
-You need to add the following settings in your config.xml file for Android Account Manager to work:
-
-```
-<preference name="AccountManagerLabel" value="Your Label Here" />
-<preference name="AccountManagerIconUrl" value="your_icon_url_here.png" />
-<preference name="AccountManagerType" value="your.unique.identifier" />
-```
+The following variables need to be set in config.xml:
+- ACCOUNT_MANAGER_LABEL
+- ACCOUNT_MANAGER_TYPE
 
 ## Supported Platforms
 
@@ -49,14 +40,23 @@ You need to add the following settings in your config.xml file for Android Accou
 ## Methods
 
 - initWithKey: register the encryptionKey for AES encryption. It must be called before other Account Manager methods
+* function(encryptionKey, successCallback, errorCallback) 
 - registerAccount: register an user in Account Manager
+* function(userName, password, accountType, group, userData, successCallback, errorCallback) 
 - removeAccount: remove all data from keychain (iOS)
+* function(accountType, successCallback, errorCallback) 
 - getUserAccount: returns an String with account name if account exist
+* function(accountType, group, returnKey, successCallback, errorCallback) 
 - getPassword: returns password if account exist
+* function(accountType, group, key, successCallback, errorCallback) 
 - getDataFromKey: returns data from specified key
+* function(accountType, group, key, successCallback, errorCallback) 
 - setUserData: set object with information into Account Manager or Keychain
+* function(accountType, group, data, successCallback, errorCallback)
 - setPassword: update account password
+* function(accountType, group, newPassword, successCallback, errorCallback) 
 - resetPassword: update account password with String "0000"
+* function(accountType, group, successCallback, errorCallback) 
 
 ## Key Parameters
 
