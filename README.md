@@ -34,7 +34,6 @@ The following variables need to be set in config.xml:
 
 ## Supported Platforms
 
-- Android
 - iOS
 
 ## Methods
