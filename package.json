@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-mg-kunder-keychain",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Use iOS Keychain to manage accounts of one user and share with other applications of the same vendor",
   "cordova": {
     "id": "cordova-plugin-mg-kunder-keychain",
@@ -18,7 +18,7 @@
     "keychain",
     "ios",
     "plugin",
-    "ecosystem:cordova",
+    "ecosystem:cordova"
   ],
   "author": "Kunder",
   "license": "MIT",
