@@ -11,7 +11,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager.git"
+    "url": "git+https://github.com/ChangeGamers/cordova-plugin-mg-kunder-keychain.git"
   },
   "keywords": [
     "cordova",
@@ -23,7 +23,7 @@
   "author": "Kunder",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager/issues"
+    "url": "https://github.com/ChangeGamers/cordova-plugin-mg-kunder-keychain/issues"
   },
-  "homepage": "https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager#readme"
+  "homepage": "https://github.com/ChangeGamers/cordova-plugin-mg-kunder-keychain#readme"
 }
