@@ -41,21 +41,21 @@ The following variables need to be set in config.xml:
 - initWithKey: register the encryptionKey for AES encryption. It must be called before other Account Manager methods
     - function(encryptionKey, successCallback, errorCallback) 
 - registerAccount: register an user in Account Manager
-* function(userName, password, accountType, group, userData, successCallback, errorCallback) 
+    - function(userName, password, accountType, group, userData, successCallback, errorCallback) 
 - removeAccount: remove all data from keychain (iOS)
-* function(accountType, successCallback, errorCallback) 
+    - function(accountType, successCallback, errorCallback) 
 - getUserAccount: returns an String with account name if account exist
-* function(accountType, group, returnKey, successCallback, errorCallback) 
+    - function(accountType, group, returnKey, successCallback, errorCallback) 
 - getPassword: returns password if account exist
-* function(accountType, group, key, successCallback, errorCallback) 
+    - function(accountType, group, key, successCallback, errorCallback) 
 - getDataFromKey: returns data from specified key
-* function(accountType, group, key, successCallback, errorCallback) 
+    - function(accountType, group, key, successCallback, errorCallback) 
 - setUserData: set object with information into Account Manager or Keychain
-* function(accountType, group, data, successCallback, errorCallback)
+    - function(accountType, group, data, successCallback, errorCallback)
 - setPassword: update account password
-* function(accountType, group, newPassword, successCallback, errorCallback) 
+    - function(accountType, group, newPassword, successCallback, errorCallback) 
 - resetPassword: update account password with String "0000"
-* function(accountType, group, successCallback, errorCallback) 
+    - function(accountType, group, successCallback, errorCallback) 
 
 ## Key Parameters
 
