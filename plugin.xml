@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-mg-kunder-keychain" version="1.0.7">
+        id="cordova-plugin-mg-kunder-keychain" version="1.0.8">
     <name>AccountManagerPlugin</name>
     <description>Account Manager cordova plugin for android and keychain for iOS</description>
     <license>Apache 2.0</license>
     <keywords>cordova,accountmanager,android,plugin</keywords>
-
-    <js-module src="www/AccountManager.js" name="AccountManager">
-        <clobbers target="window.AccountManager" />
-    </js-module>
-
-    <preference name="ACCOUNT_MANAGER_LABEL"/>
-    <preference name="ACCOUNT_MANAGER_TYPE"/>
 
     <engines>
         <engine name="cordova" version=">=8.1.1" />
     </engines>
 
     <platform name="ios">
+        <js-module src="www/AccountManager.js" name="AccountManager">
+            <clobbers target="window.AccountManager" />
+        </js-module>
+
+        <preference name="ACCOUNT_MANAGER_LABEL"/>
+        <preference name="ACCOUNT_MANAGER_TYPE"/>
+
         <config-file target="config.xml" parent="/*">
             <feature name="AccountManagerPlugin">
                 <param name="ios-package" value="AccountManagerPlugin"/>
